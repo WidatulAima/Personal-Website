@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- Created By WIDATULAIMA -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>FAMILY</title>
+  <link rel="stylesheet" href="family.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="menu-icon">
+<span class="fas fa-bars"></span></div>
+<div class="logo">
+WIDATUL AIMA</div>
+<div class="nav-items">
+<li><a class="active" href="index.html">HOME</a></li>
+<li><a href="biodata.html">BIODATA</a></li>
+<li><a href="experience.html">EXPERIENCE</a></li>
+<li><a href="education.html">EDUCATION</a></li>
+<li><a href="family.html">FAMILY</a></li>
+<li><a href="gallery.html">GALLERY</a></li>
+</div>
+
+<div class="search-icon">
+<span class="fas fa-search"></span></div>
+<div class="cancel-icon">
+<span class="fas fa-times"></span></div>
+<form action="#">
+        <input type="search" class="search-data" placeholder="Search" required>
+        <button type="submit" class="fas fa-search"></button>
+      </form>
+</nav>
+<body>
+<h1 
+<h1 style="color:red; font-size:400%" align="center">MY FAMILY</h1>
+<hr width="2000" style="2">
+<h2>
+<img src="image/all family.jpg" width="460" height="445">
+<p style="color:white">Family Is Everything For Me</p>
+</h2>
+<p>
+<p>
+</p>
+<h3 style="color:yellow; font-size:200%"> MY FATHER</h3>
+<img src="image/dedi.jpg" width="360" height="445"><p style="color:white">NAME : MUHAMMAD BIN HARUN<br>
+AGE : 77<br>
+JOB : NOT WORKING<br>
+NO PHONE : 0199216315</p>
+<h4 style="color:yellow; font-size:200%"> MY MOTHER</h4>
+<img src="image/emak.jpg" width="360" height="445"><p style="color:white">NAME : FATIMAH BINTI CHE MAT<br>
+AGE : 66<br>
+JOB : NOT WORKING<br>
+NO PHONE : 0176344353</p>
+<h5 style="color:yellow; font-size:200%"> MY SISTER</h5>
+<img src="image/rose.jpg" width="360" height="445"><p style="color:white">NAME : ROSMAWATI BINTI MUHAMMAD<br>
+AGE : 45<br>
+JOB : ACCOUNTANT<br>
+NO PHONE : 0122244355</p>
+
+<script>
+    const menuBtn = document.querySelector(".menu-icon span");
+    const searchBtn = document.querySelector(".search-icon");
+    const cancelBtn = document.querySelector(".cancel-icon");
+    const items = document.querySelector(".nav-items");
+    const form = document.querySelector("form");
+    menuBtn.onclick = ()=>{
+      items.classList.add("active");
+      menuBtn.classList.add("hide");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+    cancelBtn.onclick = ()=>{
+      items.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      searchBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      form.classList.remove("active");
+      cancelBtn.style.color = "#ff3d00";
+    }
+    searchBtn.onclick = ()=>{
+      form.classList.add("active");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+  
+</script>
+  </body>
+</html>

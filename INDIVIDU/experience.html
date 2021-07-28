@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- Created By WIDATUL AIMA -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="menu-icon">
+<span class="fas fa-bars"></span></div>
+<div class="logo">
+WIDATUL AIMA</div>
+<div class="nav-items">
+<li><a class="active" href="index.html">HOME</a></li>
+<li><a href="biodata.html">BIODATA</a></li>
+<li><a href="experience.html">EXPERIENCE</a></li>
+<li><a href="education.html">EDUCATION</a></li>
+<li><a href="family.html">FAMILY</a></li>
+<li><a href="gallery.html">GALLERY</a></li>
+</div>
+
+<div class="search-icon">
+<span class="fas fa-search"></span></div>
+<div class="cancel-icon">
+<span class="fas fa-times"></span></div>
+<form action="#">
+        <input type="search" class="search-data" placeholder="Search" required>
+        <button type="submit" class="fas fa-search"></button>
+      </form>
+</nav>
+<h1 style="color:blanchedalmond; font-size:300%">THIS IS MY STORY EXPERIENCE </h1>
+<h2 style="background-color:yellowgreen; font-size:300%">MY EXPERIENCE DURING MCO (MALAYSIAN MOVEMENT CONTROL ORDER)</h2>
+<p style="background-color:tomato; font-size:200%">HELLO GUYS!!!
+
+Assalamualaikum, I hope you all are in good condition. Today I want to share with u all about my experience study in online class. My online learning experience as a student is not so good. I only like how I don’t have to wake up at 6 every day. What I don’t like about it is that for me it’s confusing when a lecturer gives us work mostly since it’s easier for me to do work with instructions that the lecturer gives. Being in a physical classroom makes me only focus on my work, but online learning makes it harder to focus because I have to also focus on household stuff, and it throws me off. I would not want to do online learning in the future because it is hard for me to concentrate on my work only.
+
+But in same time I love that I get to work from the comfort of my home; however, I would rather be in a physical classroom doing my work because it gives me the opportunity to ask questions when needed, and in my own opinion, it is much more effective than online learning. Compared to learning in a physical classroom online classes seem more difficult because you don’t get the hands-on learning like you do in a physical classroom. In the future, I’d choose a physical classroom over online any day. The reason being, it’s easier for me to understand the lesson plans and put my new knowledge into effect.
+
+That's all the experience that I want to share with you all. Thank You.
+</p>
+<script>
+    const menuBtn = document.querySelector(".menu-icon span");
+    const searchBtn = document.querySelector(".search-icon");
+    const cancelBtn = document.querySelector(".cancel-icon");
+    const items = document.querySelector(".nav-items");
+    const form = document.querySelector("form");
+    menuBtn.onclick = ()=>{
+      items.classList.add("active");
+      menuBtn.classList.add("hide");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+    cancelBtn.onclick = ()=>{
+      items.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      searchBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      form.classList.remove("active");
+      cancelBtn.style.color = "#ff3d00";
+    }
+    searchBtn.onclick = ()=>{
+      form.classList.add("active");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+	
+</script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- Created By WIDATULAIMA -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>EDUCATION</title>
+	<link rel="stylesheet" href="Education.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="menu-icon">
+<span class="fas fa-bars"></span></div>
+<div class="logo">
+WIDATUL AIMA</div>
+<div class="nav-items">
+<li><a class="active" href="index.html">HOME</a></li>
+<li><a href="biodata.html">BIODATA</a></li>
+<li><a href="experience.html">EXPERIENCE</a></li>
+<li><a href="education.html">EDUCATION</a></li>
+<li><a href="family.html">FAMILY</a></li>
+<li><a href="gallery.html">GALLERY</a></li>
+</div>
+
+<div class="search-icon">
+<span class="fas fa-search"></span></div>
+<div class="cancel-icon">
+<span class="fas fa-times"></span></div>
+<form action="#">
+        <input type="search" class="search-data" placeholder="Search" required>
+        <button type="submit" class="fas fa-search"></button>
+      </form>
+</nav>
+<h1 style="color:green; font-size:300%">PRE -SCHOOL AND PRIMARY SCHOOL </h1>
+<p style="background-color:turquoise; font-size:200%">In 2003 my mother enrolled me to pre -school at Sekolah Kebangsaan Machang 2. This school is not far from my house. Every morning my mom would send me to school on a motorcycle. I studied at that school until I was 12 years old. I have many acquaintances at the school.
+2009 was my last year at that school. I got 3A 2B in UPSR at the time.
+
+<h2 style="color:yellow; font-size:300%">SECONDARY SCHOOL</h2>
+<p style="background-color:blueviolet; font-size:200%"> I have furthered my studies at Machang City National High School. The school is also not far from home, I go to school every day on foot. In this school I learned a lot about new things and also gained a variety of new knowledge as well as what is the meaning of friendship. During the time I spent studying in this high school, I gained various experiences from kind and responsible teachers. I finished my studies at this secondary school in 2014 with SPM results that can be said to be neither bad nor very good. Yet I am thankful that God has always helped me and provided ample sustenance to taste new experiences that others may not have been able to go through.
+
+<h3 style="color:deeppink; font-size:300%">MARA UNIVERSITY OF TECHNOLOGY (UiTM)</h3>
+<p style="background-color:blanchedalmond; font-size:200%"> In 2017, I was given the sustenance to further my studies to the Diploma level at UiTM Kelantan. At that time I was 21 years old. I have been taking khursus in Information Management for over 3 years and soon I will be finishing my studies all this time. And if given another chance, I would like to continue my studies to the degree level because for me, gaining knowledge is not a loss and does not know age.
+
+<script>
+    const menuBtn = document.querySelector(".menu-icon span");
+    const searchBtn = document.querySelector(".search-icon");
+    const cancelBtn = document.querySelector(".cancel-icon");
+    const items = document.querySelector(".nav-items");
+    const form = document.querySelector("form");
+    menuBtn.onclick = ()=>{
+      items.classList.add("active");
+      menuBtn.classList.add("hide");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+    cancelBtn.onclick = ()=>{
+      items.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      searchBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      form.classList.remove("active");
+      cancelBtn.style.color = "#ff3d00";
+    }
+    searchBtn.onclick = ()=>{
+      form.classList.add("active");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+	
+</script>
+  </body>
+</html>
